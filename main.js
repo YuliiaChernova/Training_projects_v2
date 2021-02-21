@@ -1,0 +1,3 @@
+/*
+There is just an empty main branch. All training projects are available in another branches.
+*/
