@@ -1,10 +1,10 @@
-#contact-book-container {
+#students-container {
     width: 70%;
     border: 1px solid black;
     margin: auto;
 }
 
-#contact-form-container {
+#student-form-container {
     width: 70%;
     margin: auto;
     margin-top: 50px;
@@ -17,8 +17,14 @@
     font-weight: bold;
 }
 
-.contact-row {
+.student-row {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+}
+
+#average-mark-container {
+    width: 50%;
+    margin: auto;
+    margin-top: 20px;
 }

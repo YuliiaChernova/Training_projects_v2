@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="./script.js" async></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <div id="students-container">
+        <div id="header-row">
+            <div id="name-header">Name</div>
+            <div id="marks-header">Marks</div>
+            <div id="average-mark">Average mark</div>
+            <div id="action-header">Action</div>
+        </div>
+
+        <div id="students-list">
+
+        </div>
+    </div>
+
+    <div id="average-mark-container">
+        <label for="average-group-input">Average Group Mark</label> <input type="text" id="average-group-input">
+    </div>
+
+    <div id="student-form-container">
+        <label for="name-input">Name</label> <input type="text" id="name-input">
+        <label for="marks-input">Marks</label> <input type="text" id="marks-input">
+        <button id="add-student-btn">Add student</button>
+    </div>
+
+    <script type="text/template" id="student-template">
+        <div class="student-row" data-student-id="{{id}}">
+            <div class="student-name"> {{name}} </div>
+            <div class="student-marks"> {{marks}} </div>
+            <div class="student-average-mark">{{average-mark}}</div>
+            <div class="student-action"> <span class="delete-btn"> X </span> </div>
+        </div>
+    </script>
+
+</body>
+
+</html>
