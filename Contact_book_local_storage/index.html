@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="./script.js" async></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <div id="contact-book-container">
+        <div id="contact-book">
+            <div id="header-row">
+                <div id="name-header">Name</div>
+                <div id="surname-header">Surname</div>
+                <div id="phone-header">Phone</div>
+                <div id="email-header">Email</div>
+                <div id="action-header">Action</div>
+            </div>
+            <div id="contacts-container"></div>
+        </div>
+    </div>
+
+    <div id="contact-form-container">
+        <div id="contact-form">
+            <label for="name-input">Name</label> <input type="text" id="name-input"> 
+            <label for="surname-input">Surname</label> <input type="text" id="surname-input"> 
+            <label for="phone-input">Phone</label> <input type="text" id="phone-input"> 
+            <label for="email-input">Email</label> <input type="text" id="email-input"> 
+            <button id="add-contact-btn">Add contact</button>
+        </div>
+    </div>
+
+    <script type="text-template" id="contact-template">
+        <div class="contact-row" data-contact-id="{{id}}">
+            <div class="contact-name"> {{name}} </div>
+            <div class="contact-surname"> {{surname}} </div>
+            <div class="contact-phone"> {{phone}} </div>
+            <div class="contact-email"> {{email}} </div>
+            <div class="contact-action"> <span class="delete-btn"> X </span> </div>
+        </div>
+    </script>
+
+</body>
+
+</html>

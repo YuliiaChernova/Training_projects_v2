@@ -1,0 +1,24 @@
+#contact-book-container {
+    width: 70%;
+    border: 1px solid black;
+    margin: auto;
+}
+
+#contact-form-container {
+    width: 70%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+#header-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-weight: bold;
+}
+
+.contact-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
